@@ -25,8 +25,8 @@ async function generateShortURL(req, res) {
         visitHistory: [],
     });
 
-    //* Return the generated short ID to the terminal
-    return res.json({ id: shortid });
+    //* Return the user to the home page
+    return res.render("home", { id: shortid });
 }
 
 //* Export the function
