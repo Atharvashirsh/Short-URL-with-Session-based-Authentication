@@ -23,6 +23,7 @@ async function generateShortURL(req, res) {
         shortId: shortid,
         redirectURL: body.url,
         visitHistory: [],
+        createdBy: req.user._id, //* ID of the user from the middleware
     });
 
     //* Return the user to the home page

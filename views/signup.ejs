@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SignUp - Short URL</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <h1>SignUp page</h1>
+        <div>
+            <form action="/user" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" required />
+
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required />
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </body>
+</html>
